@@ -1,0 +1,7 @@
+__pycache__/
+*.asv
+.pio/
+.vscode/
+desktop.ini
+Thumbs.db
+photos/A_METTRE_ICI.md
