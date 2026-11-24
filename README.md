@@ -4,6 +4,12 @@
 
 **Compétences mobilisées :** C++ embarqué (Arduino / **PlatformIO**) · bus I²C (OLED SSD1306) · capteurs numériques et analogiques (DHT11, LDR, PIR, capteur d'obstacle, potentiomètre) · machine à états non bloquante (`millis()`) · anti-rebond du bouton · pilotage d'actionneurs (buzzer, LED, relais).
 
+| Intrusion détectée : alarme (LED rouge) | État normal (LED verte) |
+|---|---|
+| ![Montage en alarme](photos/montage_alarme_led_rouge.jpg) | ![Montage à l'état normal](photos/montage_etat_normal_led_verte.jpg) |
+
+*Prototype sur plaque d'essai : ESP32 DevKit V1, PIR, capteur d'obstacle, module 2 relais, potentiomètre, LED d'état.*
+
 ## Fonctionnement
 - **Mesures** : température et humidité (DHT11, lues toutes les 2 s), luminosité, présence (PIR), obstacle, potentiomètre.
 - **Détection d'intrusion** : mouvement **ou** obstacle → alarme pendant 2 s (buzzer à 2 kHz + LED rouge).
